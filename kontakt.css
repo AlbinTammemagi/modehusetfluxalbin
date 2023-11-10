@@ -97,17 +97,15 @@ img {
 
 @media only screen and (max-width: 768px) {
     body {
-      font-size: 14px; /* Exempel: Minska textstorleken för mindre skärmar */
+      font-size: 14px;
     }
   
-    /* Lägg till fler anpassade stilar för tabletter här */
   }
   
   @media only screen and (max-width: 480px) {
     body {
-      font-size: 12px; /* Exempel: Minska textstorleken ytterligare för mobiler */
+      font-size: 12px; 
     }
   
-    /* Lägg till fler anpassade stilar för mobiler här */
   }
   
