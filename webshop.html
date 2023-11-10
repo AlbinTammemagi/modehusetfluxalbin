@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modehuset Flux - Webbshop</title>
+    <link rel="stylesheet" type="text/css" href="webshop.css">
+    <link rel="stylesheet" type="text/css" href="hamburgerstyle.css">
+    <header>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="modehusetflux.html">Hem</a></li>
+            <li><a href="designer.html">Designers</a></li>
+            <li><a href="webshop.html">webbshop</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+        <a href="modehusetflux.html"><h1>Modehuset Flux</h1></a>
+    </header>
+    <a href="modehusetflux.html"><h1>Modehuset Flux</h1></a>
+</head>
+<body>
+    <script src="hamburgermeny.js"></script>   
+
+    <section id="webbshop">
+        <h2>Välkommen till <br>Webbshopen</h2>
+        <div class="product">
+            <img src="bilder/skjorta.webp" alt="Skjorta">
+            <h3>Tröja</h3>
+            <p>Beskrivning av tröjan.</p>
+            <button onclick="addToCart('Tröja')">Lägg till i kundvagn</button>
+        </div>
+        
+        <div class="product">
+            <img src="bilder/byxor.webp" alt="Byxor">
+            <h3>Byxor</h3>
+            <p>Beskrivning av byxorna.</p>
+            <button onclick="addToCart('Byxor')">Lägg till i kundvagn</button>
+        </div>
+        
+        <div class="product">
+            <img src="bilder/skor.jpeg" alt="Skor">
+            <h3>Skor</h3>
+            <p>Beskrivning av skorna.</p>
+            <button onclick="addToCart('Skor')">Lägg till i kundvagn</button>
+        </div>
+    </section>
+
+    <div class="cart">
+        <h3>Kundvagn</h3>
+        <ul id="cart-items">
+            <!-- Produkter i kundvagnen visas här -->
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; Modehuset flux - alla rättigheter reserverade <br> Karlbergsvägen 57 <br> Kontakt <a href="mailto:albin.tammemagi@hotmail.se" style="color: white;">albin.tammemagi@hotmail.se</a>.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            const cartItems = document.getElementById("cart-items");
+            const newItem = document.createElement("li");
+            newItem.textContent = productName;
+            
+            // Lägg till en knapp för att ta bort produkten
+            const removeButton = document.createElement("button");
+            removeButton.textContent = "Ta bort";
+            removeButton.onclick = function () {
+                newItem.remove();
+            };
+
+            newItem.appendChild(removeButton);
+            cartItems.appendChild(newItem);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    -webkit-mask-image: url('bilder/LogoF.png');
+    mask-image: url('bilder/LogoF.png');
+    mask-mode: alpha;
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+}
+.fet {
+    font-weight: bold; 
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 1450px; 
+}
+#designers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.designer {
+    text-align: center;
+}
+
+.designer img {
+    width: 200px;
+    height: auto;
+    border-radius: 60px;
+}
+
+header {
+    background-color: #fff;
+    color: #333; /* Ändra textfärgen till vit */
+    text-align: center;
+    padding: 20px;
+}
+
+    
+    h1 {
+        font-size: 50px;
+        color: #333; 
+        margin-top: 150px;
+    }
+    
+
+img {
+    width: 200px; /* Bredd på bilden */
+    height: auto; /* Automatisk höjd för att bevara proportionerna */
+}
+.cta-knapp {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5733; /* Bakgrundsfärg för knappen */
+    color: #fff; /* Textfärg */
+    text-decoration: none;
+    border-radius: 5px; /* Runda hörn på knappen */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #FF874E; /* Färg vid hover (när muspekaren är över knappen) */
+}
+.cta-knapp {
+    /* Övrig CSS-styling här */
+    position: fixed;
+    right: 20px;
+    top: 50%; /* Justera toppositionen som önskat */
+    transform: translateY(-50%); /* Centrera vertikalt */
+}
+a {
+    text-decoration: none;
+}

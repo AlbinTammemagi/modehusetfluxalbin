@@ -1,0 +1,80 @@
+/* designers.css */
+
+#designers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Lägg till denna rad för att hantera mindre skärmar */
+    margin-top: 100px; /* Lägg till margin-top för att flytta ner designersektionen */
+}
+
+
+.designer {
+    text-align: center;
+    width: 200px; /* Ange en fast bredd för varje designersektion */
+    margin: 20px; /* Lägg till lite marginal runt varje designersektion */
+}
+
+.designer img {
+    width: 100%; /* Gör bilden fylld bredd inom designersektionen */
+    height: auto;
+}
+
+.designer h2 {
+    margin-top: 10px; /* Lite mellanrum mellan bild och text */
+}
+
+.designer p {
+    margin-top: 5px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    padding: 0px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+h2 {
+    color: #000;    
+    margin-top: 100px;
+    text-align: center;
+}
+.cta-knapp {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5733; /* Bakgrundsfärg för knappen */
+    color: #fff; /* Textfärg */
+    text-decoration: none;
+    border-radius: 5px; /* Runda hörn på knappen */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #FF874E; /* Färg vid hover (när muspekaren är över knappen) */
+}
+.cta-knapp {
+    /* Övrig CSS-styling här */
+    position: fixed;
+    right: 20px;
+    top: 50%; /* Justera toppositionen som önskat */
+    transform: translateY(-50%); /* Centrera vertikalt */
+}
+a {
+    text-decoration: none;
+}
