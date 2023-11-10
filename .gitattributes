@@ -3,5 +3,5 @@
 git init
 git add .
 git commit -m "Första commit"
-git remote add origin https://github.com/AlbinTammemagi/Inla-mningsuppgift-webanalys-interaktionsdesign.git
+git remote add origin https://github.com/AlbinTammemagi/modehusetfluxalbin.git
 git push -u origin master
