@@ -63,3 +63,18 @@ footer {
     padding: 10px;
     width: 100%;
 }
+/* desktop-stilar här */
+
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 480px) {
+    body {
+      font-size: 12px; 
+    }
+  
+  }
