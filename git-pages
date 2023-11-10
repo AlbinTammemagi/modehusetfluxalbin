@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "Första commit"
+git remote add origin <URL till ditt nya repo>
+git push -u origin main  # Om din huvudgren heter "main"
