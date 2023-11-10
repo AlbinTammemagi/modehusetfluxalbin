@@ -1,9 +1,0 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-git init
-git add .
-git commit -m 
-git remote add origin https://github.com/AlbinTammemagi/modehusetfluxalbin.git
-git push -u origin master
-git checkout -b gh-pages
-git push origin gh-pages
