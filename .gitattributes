@@ -2,6 +2,6 @@
 * text=auto
 git init
 git add .
-git commit -m "Första commit"
+git commit -m 
 git remote add origin https://github.com/AlbinTammemagi/modehusetfluxalbin.git
 git push -u origin master
