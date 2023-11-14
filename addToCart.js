@@ -4,7 +4,7 @@ function addToCart(productId) {
     // Lägg till produkten i kundvagnen baserat på produktens ID
     cart.push(productId);
 
-    // Uppdatera kundvagnen på sidan
+
     updateCart();
 }
 
