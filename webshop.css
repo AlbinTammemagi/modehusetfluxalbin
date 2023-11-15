@@ -19,26 +19,29 @@ header {
     padding: 0px;
 }
 
-header h1 {
-    font-size: 24px;
-    color: #333;
+header h1 a {
+    color: black; /* Set the color to black */
+    text-decoration: none; /* Remove underline from the link */
 }
 
 #webbshop {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 1000px; /* Add some top padding to create space */
 }
 
-
 .product {
+    display: inline-block;
     text-align: center;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
-    width: 300px;
+    width: 30%;
+    box-sizing: border-box;
 }
+
 .product img {
     width: 100%;
     height: auto;
@@ -63,18 +66,17 @@ footer {
     padding: 10px;
     width: 100%;
 }
+
 /* desktop-stilar här */
 
 @media only screen and (max-width: 768px) {
     body {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
-  }
-  
-  @media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 480px) {
     body {
-      font-size: 12px; 
+        font-size: 12px; 
     }
-  
-  }
+}

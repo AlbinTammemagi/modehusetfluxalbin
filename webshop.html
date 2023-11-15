@@ -5,14 +5,18 @@
     <link rel="stylesheet" type="text/css" href="webshop.css">
     <link rel="stylesheet" type="text/css" href="hamburgerstyle.css">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XEKEGRL30Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEKEGRL30Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-XEKEGRL30Q');
-</script>
+        gtag('config', 'G-XEKEGRL30Q');
+    </script>
+</head>
+<body>
+    <script src="hamburgermeny.js"></script>   
+
     <header>
         <div class="menu-toggle" id="menu-toggle">
             <div class="bar"></div>
@@ -22,46 +26,62 @@
         <ul class="menu" id="menu">
             <li><a href="index.html">Hem</a></li>
             <li><a href="designer.html">Designers</a></li>
-            <li><a href="webshop.html">webbshop</a></li>
+            <li><a href="webshop.html">Webbshop</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
-        <a href="index.html"><h1>Modehuset Flux</h1></a>
+        <h1><a href="index.html">Modehuset Flux</a></h1>
     </header>
-    <a href="index.html"><h1>Modehuset Flux</h1></a>
-</head>
-<body>
-    <script src="hamburgermeny.js"></script>   
 
     <section id="webbshop">
         <h2>Välkommen till <br>Webbshopen</h2>
-        <div class="product">
+        <div class="cart">
+            <h3>Kundvagn</h3>
+            <ul id="cart-items">
+                <!-- Produkter i kundvagnen visas här -->
+            </ul>
+        </div>
+
+        <!-- Product 1 -->
+        <div class="product active" id="product1">
             <img src="bilder/skjorta.webp" alt="Skjorta">
             <h3>Tröja</h3>
             <p>Vit skjorta designad av Emelie <br>Perfekt till kostymen eller casual.</p>
             <button onclick="addToCart('Tröja')">Lägg till i kundvagn</button>
         </div>
-        
-        <div class="product">
+
+        <!-- Product 2 -->
+        <div class="product active" id="product2">
             <img src="bilder/byxor.webp" alt="Byxor">
             <h3>Byxor</h3>
             <p>Linnebyxor designade av Glenn <br> Den perfekta sommarbyxan.</p>
             <button onclick="addToCart('Byxor')">Lägg till i kundvagn</button>
         </div>
-        
-        <div class="product">
+
+        <!-- Product 3 -->
+        <div class="product active" id="product3">
             <img src="bilder/skor.jpeg" alt="Skor">
             <h3>Skor</h3>
             <p>Svarta kostymskor designade av Lars<br>Casual samtidigt classy.</p>
             <button onclick="addToCart('Skor')">Lägg till i kundvagn</button>
         </div>
+
+        <!-- Product 4 -->
+        <div class="product active" id="product4">
+            <img src="bilder/ringar.webp" alt="ringar">
+            <h3>Ringar</h3>
+            <p>Ringar av Lars.<br>Perfekt för Casual.</p>
+            <button onclick="addToCart('Ringar')">Lägg till i kundvagn</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product active" id="product5">
+            <img src="bilder/mossa.webp" alt="Mössa">
+            <h3>Mössa</h3>
+            <p>Designad av Emelie.<br>Vårt sammnarbete med Stockholms bränneri.</p>
+            <button onclick="addToCart('Mössa')">Lägg till i kundvagn</button>
+        </div>
     </section>
 
-    <div class="cart">
-        <h3>Kundvagn</h3>
-        <ul id="cart-items">
-            <!-- Produkter i kundvagnen visas här -->
-        </ul>
-    </div>
 
     <footer>
         <p>&copy; Modehuset flux - alla rättigheter reserverade <br> Karlbergsvägen 57 <br> Kontakt <a href="mailto:albin.tammemagi@hotmail.se" style="color: white;">albin.tammemagi@hotmail.se</a>.</p>
@@ -72,7 +92,6 @@
             const cartItems = document.getElementById("cart-items");
             const newItem = document.createElement("li");
             newItem.textContent = productName;
-            
             
             const removeButton = document.createElement("button");
             removeButton.textContent = "Ta bort";

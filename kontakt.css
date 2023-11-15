@@ -23,7 +23,7 @@
     color: #666;
 }
 
-/* Använd samma header- och footer-stilar som på de andra sidorna */
+
 header {
     position: fixed;
     top: 0;
@@ -35,9 +35,9 @@ header {
     padding: 0px;
 }
 
-header h1 {
-    font-size: 24px;
-    color: #333;
+header h1 a {
+    color: black; 
+    text-decoration: none;
 }
 
 footer {
