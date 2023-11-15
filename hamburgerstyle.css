@@ -8,6 +8,7 @@ body {
     top: 20px;
     left: 20px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .bar {
@@ -27,6 +28,7 @@ body {
     width: 200px;
     height: 100%;
     transition: left 0.3s ease-in-out;
+    z-index: 999; 
 }
 
 .menu.active {
@@ -51,19 +53,5 @@ img {
     display: block; 
     margin: 0 auto; 
 }
-/* desktop-stilar här */
 
-@media only screen and (max-width: 768px) {
-    body {
-      font-size: 14px;
-    }
-  
-  }
-  
-  @media only screen and (max-width: 480px) {
-    body {
-      font-size: 12px; 
-    }
-  
-  }
   
