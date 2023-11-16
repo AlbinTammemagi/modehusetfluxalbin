@@ -1,26 +1,26 @@
-/* designers.css */
+
 
 #designers {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Lägg till denna rad för att hantera mindre skärmar */
-    margin-top: 100px; /* Lägg till margin-top för att flytta ner designersektionen */
+    flex-wrap: wrap; 
+    margin-top: 100px; 
 }
 
 
 .designer {
     text-align: center;
-    width: 200px; /* Ange en fast bredd för varje designersektion */
-    margin: 20px; /* Lägg till lite marginal runt varje designersektion */
+    width: 200px; 
+    margin: 20px; 
 }
 
 .designer img {
-    width: 100%; /* Gör bilden fylld bredd inom designersektionen */
+    width: 100%; 
     height: auto;
 }
 
 .designer h2 {
-    margin-top: 10px; /* Lite mellanrum mellan bild och text */
+    margin-top: 10px; 
 }
 
 .designer p {
@@ -40,7 +40,7 @@ header {
 }
 
 header h1 a {
-    color: black; 
+    color: #000; 
     text-decoration: none;
 }
 footer {
@@ -58,23 +58,23 @@ h2 {
 .cta-knapp {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FF5733; /* Bakgrundsfärg för knappen */
-    color: #fff; /* Textfärg */
+    background-color: #FF5733; 
+    color: #fff; 
     text-decoration: none;
-    border-radius: 5px; /* Runda hörn på knappen */
+    border-radius: 5px; 
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #FF874E; /* Färg vid hover (när muspekaren är över knappen) */
+    background-color: #FF874E; 
 }
 .cta-knapp {
-    /* Övrig CSS-styling här */
+   
     position: fixed;
     right: 20px;
-    top: 50%; /* Justera toppositionen som önskat */
-    transform: translateY(-50%); /* Centrera vertikalt */
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 a {
     text-decoration: none;
@@ -92,6 +92,6 @@ a {
     body {
       font-size: 12px; 
     }
-  
-  }
-  
+    img 
+        width: 200px; 
+        height: auto; 

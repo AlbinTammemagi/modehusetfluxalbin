@@ -33,10 +33,11 @@ header {
     background-color: #fff;
     color: #333;
     padding: 0px;
+    z-index: 1000;
 }
 
 header h1 a {
-    color: black; 
+    color: #000; 
     text-decoration: none;
 }
 

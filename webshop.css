@@ -21,7 +21,7 @@ header {
 }
 
 header h1 a {
-    color: black; 
+    color: #000; 
     text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ header h1 a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-top: 1000px; /* Add some top padding to create space */
+    padding-top: 1000px; 
 }
 
 .product {

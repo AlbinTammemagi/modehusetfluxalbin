@@ -59,29 +59,29 @@ header {
     
 
 img {
-    width: 200px; /* Bredd på bilden */
-    height: auto; /* Automatisk höjd för att bevara proportionerna */
+    width: 200px; 
+    height: auto; 
 }
 .cta-knapp {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FF5733; /* Bakgrundsfärg för knappen */
-    color: #fff; /* Textfärg */
+    background-color: #FF5733; 
+    color: #fff; 
     text-decoration: none;
-    border-radius: 5px; /* Runda hörn på knappen */
+    border-radius: 5px; 
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #FF874E; /* Färg vid hover (när muspekaren är över knappen) */
+    background-color: #FF874E; 
 }
 .cta-knapp {
-    /* Övrig CSS-styling här */
+  
     position: fixed;
     right: 20px;
-    top: 50%; /* Justera toppositionen som önskat */
-    transform: translateY(-50%); /* Centrera vertikalt */
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 a {
     text-decoration: none;
